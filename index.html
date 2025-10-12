@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <title>Julia's CS3 Portfolio</title>
 
+  <link rel="icon" href="favicon2.png">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
     body {
       background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
-                  url('https://i.pinimg.com/736x/4d/1a/9a/4d1a9ad9d4ee209c73cfa156fdc19b9f.jpg') no-repeat center center fixed;
+                  url('https://i.pinimg.com/736x/b2/b3/c7/b2b3c766c8857197785f0a3cbfd02d31.jpg') no-repeat center center fixed;
       background-size: cover;
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -23,23 +25,65 @@
       text-align: center;
     }
 
-   h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 70px;
-  color: #87d167;
-  text-shadow: 0 0 10px #a8ffb0, 0 0 20px #90ee90, 0 0 30px #66cc66;
-  margin-bottom: 5px; 
-}
+    .hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
 
-h2 {
-  font-family: 'Pacifico', cursive;
-  font-size: 50px;
-  color: #87d167;
-  text-shadow: 0 0 10px #a8ffb0, 0 0 20px #90ee90, 0 0 30px #66cc66;
-  margin-top: 0; 
-}
+    /* GIF Animation */
+    .side-gif {
+      width: 250px;
+      position: relative;
+      z-index: 2;
+      margin-bottom: -40px;
+      opacity: 0;
+      transform: translateY(-50px);
+      animation: gifPop 1s forwards 0.3s;
+    }
+
+    @keyframes gifPop {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Titles Animation */
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 70px;
+      color: #87d167;
+      text-shadow: 0 0 10px #a8ffb0, 0 0 20px #90ee90, 0 0 30px #66cc66;
+      margin-bottom: 5px;
+      opacity: 0;
+      transform: translateY(-30px);
+      animation: titlePop 1s forwards 0.6s;
+    }
+
+    h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 50px;
+      color: #87d167;
+      text-shadow: 0 0 10px #a8ffb0, 0 0 20px #90ee90, 0 0 30px #66cc66;
+      margin-top: 0;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: subtitlePop 1s forwards 0.9s;
+    }
+
+    @keyframes titlePop {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes subtitlePop {
+      to { opacity: 1; transform: translateY(0); }
+    }
 
     .container {
+      margin-top: 0;
       background: rgba(255, 255, 255, 0.3);
       border: 1px solid rgba(255, 255, 255, 0.4);
       backdrop-filter: blur(12px);
@@ -48,6 +92,15 @@ h2 {
       padding: 40px;
       max-width: 600px;
       width: 100%;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: containerPop 1s forwards 1.2s;
+    }
+
+    @keyframes containerPop {
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .collapsible {
@@ -122,36 +175,35 @@ h2 {
       transform: scale(1.05);
       box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     }
-
-    .side-gif {
-      width: 250px;
-      margin-bottom: 20px;
-    }
   </style>
 </head>
 <body>
 
-  <img src="https://i.pinimg.com/originals/b9/63/cf/b963cf1bf79f9ec1fe19b8b350faf8f6.gif" 
-       alt="Cute Side Decoration" 
-       class="side-gif">
+  <div class="hero">
+    <img src="https://i.pinimg.com/originals/4d/3f/d5/4d3fd5c79837384de61fd2ca64da03a7.gif" 
+         alt="Cute Side Decoration" 
+         class="side-gif">
 
-  <h1>Julia's CS3 Portfolio 💚</h1>
-  <h2> Second Quarter Edition </h2>
+    <h1>Julia's CS3 Portfolio 💚</h1>
+    <h2>Second Quarter Edition</h2>
 
-  <div class="container">
-    <button class="collapsible">📘 Graded Exercises</button>
-    <div class="content">
-      <ul>
-        <li><a href="public/2Q1GPotassiumKam.html"> First Graded Exercise </a></li>
-      </ul>
+    <div class="container">
+      <button class="collapsible">📘 Graded Exercises</button>
+      <div class="content">
+        <ul>
+          <li><a href="public/2Q1GPotassiumKam.html">First Graded Exercise</a></li>
+        </ul>
+      </div>
+
+      <button class="collapsible">📗 Non-Graded Exercises</button>
+      <div class="content">
+        <ul>
+          <li>First Non-Graded Exercise</li>
+        </ul>
+      </div>
     </div>
 
-    <button class="collapsible">📗 Non-Graded Exercises</button>
-    <div class="content">
-      <ul>
-        <li> First Non-Graded Exercise</li>
-      </ul>
-    </div>
+    <h3> For further inquiries: jfkam@pshs.edu.ph </h3>
   </div>
 
   <script>
