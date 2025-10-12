@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Julia's CS3 Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+                  url('https://i.pinimg.com/736x/4d/1a/9a/4d1a9ad9d4ee209c73cfa156fdc19b9f.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+   h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
+  color: #87d167;
+  text-shadow: 0 0 10px #a8ffb0, 0 0 20px #90ee90, 0 0 30px #66cc66;
+  margin-bottom: 5px; 
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  color: #87d167;
+  text-shadow: 0 0 10px #a8ffb0, 0 0 20px #90ee90, 0 0 30px #66cc66;
+  margin-top: 0; 
+}
+
+    .container {
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(12px);
+      border-radius: 25px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      padding: 40px;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .collapsible {
+      background: linear-gradient(135deg, #ffd6e0, #fff7d1);
+      color: #257000;
+      cursor: pointer;
+      padding: 20px 25px;
+      width: 100%;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 24px;
+      font-weight: 600;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .collapsible:hover {
+      background: linear-gradient(135deg, #c2ffcc, #e4ffcf);
+      transform: translateY(-2px);
+    }
+
+    .collapsible::after {
+      content: '▾';
+      float: right;
+      font-size: 20px;
+      transition: transform 0.3s;
+    }
+
+    .collapsible.active::after {
+      transform: rotate(180deg);
+    }
+
+    .content {
+      background-color: #fff;
+      border-radius: 15px;
+      margin-top: 10px;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.5s ease, padding 0.3s ease;
+      box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .content.open {
+      padding: 20px 25px;
+      max-height: 1000px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li a {
+      display: block;
+      text-decoration: none;
+      color: #257000;
+      background: #fde6e6;
+      font-weight: 600;
+      margin: 8px 0;
+      padding: 10px 15px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    li a:hover {
+      background: #257000;
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    .side-gif {
+      width: 250px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://i.pinimg.com/originals/b9/63/cf/b963cf1bf79f9ec1fe19b8b350faf8f6.gif" 
+       alt="Cute Side Decoration" 
+       class="side-gif">
+
+  <h1>Julia's CS3 Portfolio 💚</h1>
+  <h2> Second Quarter Edition </h2>
+
+  <div class="container">
+    <button class="collapsible">📘 Graded Exercises</button>
+    <div class="content">
+      <ul>
+        <li><a href="public/2Q1GPotassiumKam.html"> First Graded Exercise </a></li>
+      </ul>
+    </div>
+
+    <button class="collapsible">📗 Non-Graded Exercises</button>
+    <div class="content">
+      <ul>
+        <li> First Non-Graded Exercise</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll(".collapsible");
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const isActive = btn.classList.contains("active");
+        document.querySelectorAll(".collapsible").forEach(b => b.classList.remove("active"));
+        document.querySelectorAll(".content").forEach(c => c.classList.remove("open"));
+        if (!isActive) {
+          btn.classList.add("active");
+          btn.nextElementSibling.classList.add("open");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
