@@ -1,9 +1,6 @@
 <html>
 <head>
-
-
-
-
+  <link rel="icon" href="faviconKam.png">
   <style>
     .container {
       display: flex;
@@ -15,13 +12,20 @@
     h1 {
         text-align: center;
         font-size: 40px;
-        color: rgb(224, 66, 96);
+        color: rgb(0, 0, 0);
     }
 
     h2 {
       text-align: center;
-        font-size: 30px;
-        color: rgb(224, 66, 96);
+      font-size: 30px;
+      color: rgb(0, 0, 0);
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 30px;
+      color: rgb(233, 89, 111);
+
     }
 
     td, th {
@@ -37,13 +41,17 @@
     }
 
     body {
-      background-color: cornsilk;
-      font-size: 20pt;
-      font-family: "Comic Sans MS", cursive;
-    }
+  background-image: url("https://i.pinimg.com/736x/50/70/09/50700957c6349fc81d73d8f3142fbd37.jpg");
+  background-size: contain; 
+  background-repeat: repeat;
+  background-attachment: fixed; 
+  background-position: center;
+  font-size: 20pt;
+  font-family: "Comic Sans MS";
+}
 
     .side-box {
-      background-color: aliceblue;
+      background-image: url("https://i.pinimg.com/1200x/13/03/1e/13031e320d240e00ceb552ad36915be2.jpg");
       border: 5px solid rgb(233, 89, 111);
       border-radius: 15px;
       padding: 20px;
@@ -62,6 +70,61 @@
     td {
       text-align: center;
     }
+
+    table {
+    background-image: url("https://i.pinimg.com/1200x/13/03/1e/13031e320d240e00ceb552ad36915be2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .side-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.side-box li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.side-box li a {
+  text-decoration: none;
+  color: rgb(233, 89, 111);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.side-box li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(233, 89, 111, 0.5);
+}
+
+.side-box li:hover .icon {
+  transform: rotate(10deg) scale(1.2);
+  box-shadow: 0 0 10px rgba(233, 89, 111, 0.6);
+}
+
+.side-box li:hover a {
+  color: rgb(255, 130, 160);
+}
+
+.side-box li:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 5px rgba(233, 89, 111, 0.4);
+}
   </style>
 </head>
 
@@ -136,7 +199,7 @@
     </table>
 
     <div class="side-boxes">
-      <div class ="side-box"><h2>My Honest Opinions on Thursday Schedule 💭</h2>
+      <div class ="side-box"><h3>My Honest Opinions on Thursday Schedule 💭</h3>
       <p>
        Thursday schedule? Well honestly, it isn’t that bad considering the schedule. The only downside of it are the presence of bio and chem which are the first two DOUBLE-PERIOD subjects. Meaning to say, we will usually be the first section to take an exam or quiz. Early in the morning, our brains will be exhausted in order to  to gain information and not turn it into albedo ( woahhh, grade 8 concept!).
        </p>
@@ -148,21 +211,24 @@
   
 
     <div class ="side-box">
-    <h2>Links to my other members' schedule</h2>
+    <h3> Check Out Other Schedules!</h3>
     <ul>
-      <li>Dalimot</li>
-      <li>Lopez</li>
-      <li>Veloso</li>
+      <li><img src="lunox.jpg" class="icon"><a href="https://eonxonee.github.io/CS3_2ndQtrPortfolio/public/2Q1GPotassiumVeloso.html" target="_blank">Monday Schedule</a></li>
+      <li><img src="Lopez.jpg" class="icon">Tuesday Schedule</li>
+      <li><img src="dalimot.jpg" class="icon"> Friday Schedule</li>
+      
     </ul>
     </div>
     <div class="side-box" style="margin-top: 40px;">
-    <h2>Reference Links</h2>
+    <h3>Reference Links</h3>
     <ul>
       <li><a href="https://www.youtube.com/watch?v=u57HBBO1zV4" target="_blank">OIIAOIIA Cat Meme</a></li>
       <li><a href="https://tenor.com/search/tired-cat-gifs" target="_blank">Tired Cat GIFs | Tenor</a></li>
       <li><a href="https://www.youtube.com/watch?v=P1hpUVD0Q7s" target="_blank">Funny ASMR Cat Video</a></li>
       <li><a href="https://i.pinimg.com/736x/fb/cc/43/fbcc43003276a217c2c80b241342f53c.jpg" target="_blank">Funny Cat Gym Moment</a></li>
       <li><a href="https://media.tenor.com/Cse00b9Ls-4AAAAM/goobers.gif" target="_blank">Happy Cat GIFs | Tenor</a></li>
+      <li><a href="https://i.pinimg.com/736x/50/70/09/50700957c6349fc81d73d8f3142fbd37.jpg" target="_blank"> Background-Picco</a></li>
+      <li><a href="https://i.pinimg.com/1200x/13/03/1e/13031e320d240e00ceb552ad36915be2.jpg" tagret="_blank"> Beige Grid Paper</a></li>
     </ul>
   </div>
 
