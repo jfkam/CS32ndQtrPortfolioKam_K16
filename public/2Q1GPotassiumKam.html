@@ -4,6 +4,7 @@
   <style>
     .container {
       display: flex;
+      flex: 1;
       justify-content: space-between; 
       align-items: flex-start; 
       gap: 20px; 
@@ -41,14 +42,23 @@
     }
 
     body {
-  background-image: url("https://i.pinimg.com/736x/50/70/09/50700957c6349fc81d73d8f3142fbd37.jpg");
-  background-size: contain; 
-  background-repeat: repeat;
-  background-attachment: fixed; 
-  background-position: center;
-  font-size: 20pt;
-  font-family: "Comic Sans MS";
-}
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      background-image: url("https://i.pinimg.com/736x/50/70/09/50700957c6349fc81d73d8f3142fbd37.jpg");
+      background-size: contain;
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-position: center;
+      font-size: 20pt;
+      font-family: "Comic Sans MS";
+    }
+
+    html, body {
+       height: 100%;
+      margin: 0;
+    }
 
     .side-box {
       background-image: url("https://i.pinimg.com/1200x/13/03/1e/13031e320d240e00ceb552ad36915be2.jpg");
@@ -125,13 +135,25 @@
   transform: scale(0.95);
   box-shadow: 0 0 5px rgba(233, 89, 111, 0.4);
 }
+
+footer{
+  background-image: url("https://i.pinimg.com/1200x/13/03/1e/13031e320d240e00ceb552ad36915be2.jpg");
+  border-top: 5px solid rgb(233, 89, 111);
+  padding: 15px 0;
+  font-size: 17pt;
+  color: rgb(233, 89, 111);
+  text-align: center;
+  box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  margin-top: 50px;
+}
   </style>
 </head>
 
 <body>
-  <h1> ._Potassium 2029 Schedule_. </h1>
+<div class="content"><h1> ._Potassium 2029 Schedule_. </h1>
   <h2> ꒰ঌ Thursday Schedule ໒꒱ </h2>
-  <h2> ⤷ Made by: KAM </h2>
+  <h2> ⤷ Made by: Julia Kam </h2>
   <br>
 
   <div class="container">
@@ -216,20 +238,32 @@
       
     </ul>
     </div>
-    <div class="side-box" style="margin-top: 40px;">
-    <h3>Reference Links</h3>
-    <ul>
-      <li><a href="https://www.youtube.com/watch?v=u57HBBO1zV4" target="_blank">OIIAOIIA Cat Meme</a></li>
-      <li><a href="https://tenor.com/search/tired-cat-gifs" target="_blank">Tired Cat GIFs | Tenor</a></li>
-      <li><a href="https://www.youtube.com/watch?v=P1hpUVD0Q7s" target="_blank">Funny ASMR Cat Video</a></li>
-      <li><a href="https://i.pinimg.com/736x/fb/cc/43/fbcc43003276a217c2c80b241342f53c.jpg" target="_blank">Funny Cat Gym Moment</a></li>
-      <li><a href="https://media.tenor.com/Cse00b9Ls-4AAAAM/goobers.gif" target="_blank">Happy Cat GIFs | Tenor</a></li>
-      <li><a href="https://i.pinimg.com/736x/50/70/09/50700957c6349fc81d73d8f3142fbd37.jpg" target="_blank"> Background-Picco</a></li>
-      <li><a href="https://i.pinimg.com/1200x/13/03/1e/13031e320d240e00ceb552ad36915be2.jpg" tagret="_blank"> Beige Grid Paper</a></li>
-    </ul>
-  </div>
+    
+  </div></div>  
+  
+  <footer>
+    <p class="copyright">
+  &copy; <span id="year"></span> Julia Kam. All rights reserved.
+</p>
 
-  </div>
+<script>
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+    <h3>References</h3>
+    <ul>
+      <li>Nazar’s Memes. (2024, December 24). OIIAOIIA CAT Happy birthday to you | Spinning cat UIA meme [Video]. YouTube. https://www.youtube.com/watch?v=u57HBBO1zV4</li>
+      <li>Pinklover. (2018b, September 29). Tired Cat GIFs | Tenor. Tenor. https://tenor.com/search/tired-cat-gifs</li>
+      <li>my Pets ASMR. (2025, March 31). Funny ASMR 😂 Meme cat eating dry food [Video]. YouTube. https://www.youtube.com/watch?v=P1hpUVD0Q7s</li>
+      <li>Image of a kitten lifting weight [Photograph]. (n.d.).i.pinimg.com. https://i.pinimg.com/736x/fb/cc/43/fbcc43003276a217c2c80b241342f53c.jpg</li>
+      <li>Goobers [GIF].(2025, January 8).  Tenor. https://media.tenor.com/Cse00b9Ls-4AAAAM/goobers.gif</li>
+      <li> Picco (n.d.). i.pinimg.com. https://i.pinimg.com/736x/50/70/09/50700957c6349fc81d73d8f3142fbd37.jpg</li>
+      <li>Unknown author. (n.d.). Untitled image [Photograph]. i.pinimg.com. https://i.pinimg.com/1200x/13/03/1e/13031e320d240e00ceb552ad36915be2.jpg</li>
+      <li>(My Favicon, Picture on Table) Takawoyu. (n.d.). Post by @takawoyu · 30 images. Tumblr. https://www.tumblr.com/takawoyu/774188585541877760/samdinyan-png-google-drive </li>
+      <li>(Mathea's Favicon) Lunox Image - Nicole. (2023, November 5). Mobile Legends Emote Sticker. Pinterest. https://ph.pinterest.com/pin/243475923598344844/</li>
+      <li>(Hannah's Favicon) Jester Icon - Lopez, H. M. (2025)</li>
+    </ul>
+  </footer>
 
 </body>
 </html>
