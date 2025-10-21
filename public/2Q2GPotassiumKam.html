@@ -1,0 +1,319 @@
+<html>
+<head>
+  <link rel="icon" href="Banana.png">
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+      align-items: center; 
+      gap: 20px; 
+    }
+
+
+    h3 {
+      text-align: center;
+      font-size: 30px;
+      color: rgb(233, 89, 111);
+
+    }
+
+    td, th {
+      border: 5px solid;
+      color: rgb(233, 89, 111);
+      font-size: 20pt;
+      padding: 10px;
+    }
+
+    img { 
+      height: 100px;
+      width: 100px;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      background-image: url("background.png");
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-position: center;
+      font-size: 20pt;
+      font-family: "Delius Swash Caps", cursive;
+    }
+
+    header{
+        background-color: rgb(231, 163, 173);
+        font-family: "Emilys Candy", serif;
+        color: rgb(255, 255, 255);  
+        text-align: center;
+        border-bottom: 10px solid rgb(229, 255, 156);
+    }
+
+    header h1, header h2, header h3{
+        margin: 5px 0;
+    }
+
+    html, body {
+       height: 100%;
+      margin: 0;
+    }
+
+    .side-box {
+      background-image: url("https://i.pinimg.com/1200x/13/03/1e/13031e320d240e00ceb552ad36915be2.jpg");
+      border: 5px solid rgb(233, 89, 111);
+      border-radius: 15px;
+      padding: 20px;
+      width: 600px;
+      font-size: 17pt;
+      color: rgb(233, 89, 111);
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .side-boxes {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    table {
+    background-image: url("https://i.pinimg.com/1200x/13/03/1e/13031e320d240e00ceb552ad36915be2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .side-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.side-box li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.side-box li a {
+  text-decoration: none;
+  color: rgb(233, 89, 111);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.emilys-candy-regular {
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.delius-swash-caps-regular {
+  font-family: "Delius Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+footer{
+  background-color: rgb(231, 163, 173);
+  border-top: 10px solid rgb(229, 255, 156);
+  padding: 15px 0;
+  font-size: 17pt;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  margin-top: 50px;
+}
+.fixed-img {
+    position: fixed;
+    bottom: 20px;
+    left:10px;
+    width: 400;
+    height: 250;
+    z-index: 1000;
+
+}
+.schedule-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; 
+  margin-top: 15px;
+  flex-wrap: wrap; 
+}
+
+.schedule-links a {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Delius Swash Caps", cursive;
+  background: linear-gradient(145deg, rgb(233, 89, 111), rgb(231, 163, 173));
+  padding: 15px 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(233, 89, 111, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.schedule-links a:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 0 25px rgba(255, 150, 170, 0.8);
+  background: linear-gradient(145deg, rgb(255, 130, 160), rgb(233, 89, 111));
+}
+
+.schedule-links .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.schedule-links a:hover .icon {
+  transform: rotate(10deg) scale(1.2);
+  box-shadow: 0 0 20px rgba(255, 150, 170, 0.7);
+}
+  </style>
+</head>
+<header>
+    <h1> ._Potassium 2029 Schedule_. </h1>
+    <h2> ꒰ঌ Thursday Schedule ໒꒱ </h2>
+    <h2> ⤷ Made by: Julia Kam </h2>
+    <h3> ______________________________________________</h3>
+    <div class="schedule-links">
+        <img src="lunox.jpg" class="icon"><a href="https://eonxonee.github.io/CS3_2ndQtrPortfolio/public/2Q1GPotassiumVeloso.html" target="_blank">Monday Schedule</a>
+        <img src="Lopez.jpg" class="icon"><a href="https://hanna-malaika-lopez.github.io/CS3_2ndQtrPortfolioLopez/public/2Q1GPotassiumLopez/2Q1GPotassiumLopez.html" target="_blank">Tuesday Schedule</a>
+        <img src="dalimot.jpg" class="icon"><a href="https://ellysz24.github.io/CS3_2ndQtrPortfolioDalimot/public/2Q1GPotassiumDalimot.html" target="_blank">Friday Schedule</a>
+    </div>
+    
+   
+   
+</header>
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Emilys+Candy&display=swap" rel="stylesheet">
+    <img src="tag.png" class ="fixed-img" >
+<div class="content">
+  <br>
+
+  <div class="container">
+
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Period</th>
+        <th>Mood</th>
+      </tr>
+      <tr>
+        <td>7:30 AM - 9:00 AM</td>
+        <td>Bio 🧬</td>
+        <td><img src="https://media.tenor.com/F3x3SkivynMAAAAM/cat.gif"></td>
+      </tr>
+      <tr>
+        <td>9:00 AM - 9:10 AM</td>
+        <td>Break</td>
+        <td>
+          <iframe 
+            width="300" height="180"
+            src="https://www.youtube.com/embed/u57HBBO1zV4?si=XF-ONbfLpoTJ-F6A"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </td>
+      </tr>
+      <tr>
+        <td>9:10 AM - 10:40 AM</td>
+        <td>Chem ⚛️</td>
+        <td><img src="https://media.tenor.com/F3x3SkivynMAAAAM/cat.gif"></td>
+      </tr>
+      <tr>
+        <td>10:40 AM - 11:25 AM</td>
+        <td>Study Period</td>
+        <td><iframe width="300" height="180" src="https://www.youtube.com/embed/u57HBBO1zV4?si=XF-ONbfLpoTJ-F6A" allowfullscreen></iframe></td>
+      </tr>
+      <tr>
+        <td>11:25 AM - 12:10 PM</td>
+        <td>Fil 🗣️</td>
+        <td><img src="https://media.tenor.com/F3x3SkivynMAAAAM/cat.gif"></td>
+      </tr>
+      <tr>
+        <td>12:10 PM- 1:05 PM</td>
+        <td>Lunch</td>
+        <td><iframe width="300" height="180" src="https://www.youtube.com/embed/P1hpUVD0Q7s" allowfullscreen></iframe></td>
+      </tr>
+      <tr>
+        <td> 1:50 PM - 2:35 PM</td>
+        <td> Val ED 😊</td>
+        <td><img src = "https://media.tenor.com/Cse00b9Ls-4AAAAM/goobers.gif" </td>
+    </tr>
+    <tr>
+        <td> 2:35 PM - 2:45 PM</td>
+        <td> Break</td>
+        <td><iframe width="300" height="180" src="https://www.youtube.com/embed/u57HBBO1zV4?si=XF-ONbfLpoTJ-F6A" allowfullscreen></iframe> </td>
+    </tr>
+    <tr>
+        <td> 2:45 PM - 4:15 PM</td>
+        <td> P.E. ⚾</td>
+        <td><img src = "https://i.pinimg.com/736x/fb/cc/43/fbcc43003276a217c2c80b241342f53c.jpg" </td>
+    </tr>
+    </table>
+
+    <div class="side-boxes">
+      <div class ="side-box"><h3>My Honest Opinions on Thursday Schedule 💭</h3>
+      <p>
+       Thursday schedule? Well honestly, it isn’t that bad considering the schedule. The only downside of it are the presence of bio and chem which are the first two DOUBLE-PERIOD subjects. Meaning to say, we will usually be the first section to take an exam or quiz. Early in the morning, our brains will be exhausted in order to  to gain information and not turn it into albedo ( woahhh, grade 8 concept!).
+       </p>
+      
+      The rest of the day becomes more relax (pheww~), except dealing with statistics. The last two subjects which are Val Ed and PE are the most favored subjects by the students. Once the day ends, here comes Friday, a day we were all longing for which is the last day of going to school. Every students are excited for weekend, that is why everyone is motivated to keep on pushing and surviving to eventually reach our deserved rest on the weekends.
+      </p></div>
+
+    
+    
+  </div></div>  
+  
+  <footer>
+    <p class="copyright">
+  &copy; <span id="year"></span> Julia Kam. All rights reserved.
+</p>
+
+<script>
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+    <h3>References</h3>
+    <ul>
+      <li>Nazar’s Memes. (2024, December 24). OIIAOIIA CAT Happy birthday to you | Spinning cat UIA meme [Video]. YouTube. https://www.youtube.com/watch?v=u57HBBO1zV4</li>
+      <li>Pinklover. (2018b, September 29). Tired Cat GIFs | Tenor. Tenor. https://tenor.com/search/tired-cat-gifs</li>
+      <li>my Pets ASMR. (2025, March 31). Funny ASMR 😂 Meme cat eating dry food [Video]. YouTube. https://www.youtube.com/watch?v=P1hpUVD0Q7s</li>
+      <li>Image of a kitten lifting weight [Photograph]. (n.d.).i.pinimg.com. https://i.pinimg.com/736x/fb/cc/43/fbcc43003276a217c2c80b241342f53c.jpg</li>
+      <li>Goobers [GIF].(2025, January 8).  Tenor. https://media.tenor.com/Cse00b9Ls-4AAAAM/goobers.gif</li>
+      <li> Picco (n.d.). i.pinimg.com. https://i.pinimg.com/736x/50/70/09/50700957c6349fc81d73d8f3142fbd37.jpg</li>
+      <li>Unknown author. (n.d.). Untitled image [Photograph]. i.pinimg.com. https://i.pinimg.com/1200x/13/03/1e/13031e320d240e00ceb552ad36915be2.jpg</li>
+      <li>(My Favicon, Picture on Table) Takawoyu. (n.d.). Post by @takawoyu · 30 images. Tumblr. https://www.tumblr.com/takawoyu/774188585541877760/samdinyan-png-google-drive </li>
+      <li>(Mathea's Favicon) Lunox Image - Nicole. (2023, November 5). Mobile Legends Emote Sticker. Pinterest. https://ph.pinterest.com/pin/243475923598344844/</li>
+      <li>(Hannah's Favicon) Jester Icon - Lopez, H. M. (2025)</li>
+    </ul>
+  </footer>
+
+</body>
+</html>
